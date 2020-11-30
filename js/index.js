@@ -77,6 +77,7 @@ navLink2.style.color = "green";
 // Update h1
 const heading = document.querySelector("h1");
 heading.textContent = siteContent["cta"]["h1"];
+heading.innerHTML = "DOM <br> IS <br> AWESOME";
 // Update button
 const btn = document.querySelector("button");
 btn.textContent = siteContent["cta"]["button"];
