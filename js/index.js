@@ -108,3 +108,18 @@ mainContent[3].textContent = siteContent["main-content"]["product-content"];
 mainHeader[4].textContent = siteContent["main-content"]["vision-h4"];
 mainContent[4].textContent = siteContent["main-content"]["vision-content"];
 
+/********************    BOTTOM     ****************************/
+
+// set contact header and content variables
+const contactHeader = document.querySelector(".contact h4");
+const contactContent = document.querySelectorAll(".contact p");
+const copyrightContent = document.querySelector("footer");
+
+// Update contact header
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+// Update contact address, phone, email
+contactContent[0].textContent = siteContent["contact"]["address"];
+contactContent[1].textContent = siteContent["contact"]["phone"];
+contactContent[2].textContent = siteContent["contact"]["email"];
+// Update copyright
+copyrightContent.textContent = siteContent["footer"]["copyright"];
