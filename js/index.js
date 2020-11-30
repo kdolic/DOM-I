@@ -38,5 +38,51 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+/*********************   TOP    ************************** */
+
+// Update the navbar content
+const headerNav = document.querySelectorAll('nav a');
+headerNav[0].textContent = siteContent["nav"]["nav-item-1"];
+headerNav[1].textContent = siteContent["nav"]["nav-item-2"];
+headerNav[2].textContent = siteContent["nav"]["nav-item-3"];
+headerNav[3].textContent = siteContent["nav"]["nav-item-4"];
+headerNav[4].textContent = siteContent["nav"]["nav-item-5"];
+headerNav[5].textContent = siteContent["nav"]["nav-item-6"];
+// Update navlinks to green color
+const navGreen = document.querySelectorAll('nav a');
+navGreen[0].style.color = "green";
+navGreen[1].style.color = "green";
+navGreen[2].style.color = "green";
+navGreen[3].style.color = "green";
+navGreen[4].style.color = "green";
+navGreen[5].style.color = "green";
+// Create new element for nav node
+const navLink1 = document.createElement('a');
+const navLink2 = document.createElement('a');
+// Create new text for nav node
+navLink1.textContent = 'Home';
+navLink2.textContent = 'Location';
+// Update nav by append/prepend new nodes
+document.querySelector('nav').prepend(navLink1);
+document.querySelector('nav').appendChild(navLink2);
+// Update color to green
+navLink1.style.color = "green";
+navLink2.style.color = "green";
+
+
+// Update h1
+const heading = document.querySelector("h1");
+heading.textContent = siteContent["cta"]["h1"];
+// Update button
+const btn = document.querySelector("button");
+btn.textContent = siteContent["cta"]["button"];
+// Update header image 
+const headerImg = document.getElementById("cta-img");
+headerImg.src = siteContent["cta"]["img-src"];
+
+
+
