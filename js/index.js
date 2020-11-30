@@ -60,13 +60,13 @@ navGreen[2].style.color = "green";
 navGreen[3].style.color = "green";
 navGreen[4].style.color = "green";
 navGreen[5].style.color = "green";
-// Create new element for nav node
+// Create new element for nav element
 const navLink1 = document.createElement('a');
 const navLink2 = document.createElement('a');
 // Create new text for nav node
 navLink1.textContent = 'Home';
 navLink2.textContent = 'Location';
-// Update nav by append/prepend new nodes
+// Update nav by append/prepend new links
 document.querySelector('nav').prepend(navLink1);
 document.querySelector('nav').appendChild(navLink2);
 // Update color to green
@@ -84,5 +84,27 @@ btn.textContent = siteContent["cta"]["button"];
 const headerImg = document.getElementById("cta-img");
 headerImg.src = siteContent["cta"]["img-src"];
 
+/***********************   MIDDLE    *********************** */
 
+// set main header and content variables
+const mainHeader = document.querySelectorAll(".text-content h4");
+const mainContent = document.querySelectorAll(".text-content p");
+const mainImg = document.getElementById("middle-img");
+// Update features
+mainHeader[0].textContent = siteContent["main-content"]["features-h4"];
+mainContent[0].textContent = siteContent["main-content"]["features-content"];
+// Update about
+mainHeader[1].textContent = siteContent["main-content"]["about-h4"];
+mainContent[1].textContent = siteContent["main-content"]["about-content"];
+// Update middle image
+mainImg.src = siteContent["main-content"]["middle-img-src"];
+// Update services
+mainHeader[2].textContent = siteContent["main-content"]["services-h4"];
+mainContent[2].textContent = siteContent["main-content"]["services-content"];
+// Update product
+mainHeader[3].textContent = siteContent["main-content"]["product-h4"];
+mainContent[3].textContent = siteContent["main-content"]["product-content"];
+// Update vision
+mainHeader[4].textContent = siteContent["main-content"]["vision-h4"];
+mainContent[4].textContent = siteContent["main-content"]["vision-content"];
 
