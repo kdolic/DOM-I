@@ -53,13 +53,12 @@ headerNav[3].textContent = siteContent["nav"]["nav-item-4"];
 headerNav[4].textContent = siteContent["nav"]["nav-item-5"];
 headerNav[5].textContent = siteContent["nav"]["nav-item-6"];
 // Update navlinks to green color
-const navGreen = document.querySelectorAll('nav a');
-navGreen[0].style.color = "green";
-navGreen[1].style.color = "green";
-navGreen[2].style.color = "green";
-navGreen[3].style.color = "green";
-navGreen[4].style.color = "green";
-navGreen[5].style.color = "green";
+const navGreen = document.querySelectorAll('a');
+const navGreenArray = Array.from(navGreen);
+for(let i = 0; i < navGreenArray.length; i++){
+  navGreenArray[i].style.color = 'green';
+}
+
 // Create new element for nav element
 const navLink1 = document.createElement('a');
 const navLink2 = document.createElement('a');
